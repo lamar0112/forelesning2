@@ -1,8 +1,8 @@
 import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
+// https://vite.dev/config/
 export default defineConfig({
-    // This has to be equal to the name of your repository
-    // For example, since this repository is https://github.com/kristiania-kws2100-2026/kws2100-kartbaserte-websystemer,
-    //  `base` has to be `/kws2100-kartbaserte-websystemer`
-    base: "/forelesning2",
+    base: "/forelesning2/",
+    plugins: [react()],
 });
